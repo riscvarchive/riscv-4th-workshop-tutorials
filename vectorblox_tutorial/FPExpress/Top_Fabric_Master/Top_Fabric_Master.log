@@ -1,0 +1,39 @@
+Software Version: 11.7.0.119
+STAPL file '/nfs/home/joel/Documents/orca_sf2/sf2plus/FPExpress/Top_Fabric_Master/M2S010_1.stp' has been loaded successfully.
+DESIGN : Top_Fabric_Master;  CHECKSUM : ;  ALG_VERSION : 2
+Embedded FlashPro5 programmer detected.
+programmer 'E2005N2JT' : FlashPro5
+Opened '/nfs/home/joel/Documents/orca_sf2/sf2plus/FPExpress/Top_Fabric_Master/Top_Fabric_Master.pro'
+programmer 'E2005N2JT' : Scan Chain...
+Warning: programmer 'E2005N2JT' : Vpump has been selected on programmer AND an externally provided Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer 'E2005N2JT' : Check Chain...
+programmer 'E2005N2JT' : Scan and Check Chain PASSED.
+programmer 'E2005N2JT' : device 'M2S010' : Executing action PROGRAM
+programmer 'E2005N2JT' : device 'M2S010' : Family: SmartFusion2
+programmer 'E2005N2JT' : device 'M2S010' : Product:      M2S010
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT ISC_ENABLE_RESULT[32] = 007f6844
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT CRCERR: [1] = 0
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT EDCERR: [1] = 0
+programmer 'E2005N2JT' : device 'M2S010' : TEMPGRADE: ROOM
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT VPPRANGE: [3] = 2
+programmer 'E2005N2JT' : device 'M2S010' : VPPRANGE: HIGH
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT TEMP: [8] = 68
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT VPP: [8] = 7f
+programmer 'E2005N2JT' : device 'M2S010' : Set FREQRNG to $FF (7 wait cycles)
+programmer 'E2005N2JT' : device 'M2S010' : Programming eNVM...
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT eNVM component digest[256] = bce99d4d3ae610f1b6ddf4cc012e8494c0485df5b6e7d556d3a9e915e8ad1458
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT Restore user FREQRNG setting [32] = 00000091
+programmer 'E2005N2JT' : device 'M2S010' : ===================================================================================
+programmer 'E2005N2JT' : device 'M2S010' : EXPORT DSN[128] = fb240c126c4422e4152569cb33c03d71
+programmer 'E2005N2JT' : device 'M2S010' : ===================================================================================
+programmer 'E2005N2JT' : device 'M2S010' : Finished: Thu Jul  7 12:39:08 2016 (Elapsed time 00:01:18)
+programmer 'E2005N2JT' : device 'M2S010' : Executing action PROGRAM PASSED.
+programmer 'E2005N2JT' : Chain programming PASSED.
+Chain Programming Finished: Thu Jul  7 12:39:08 2016 (Elapsed time 00:01:18)
+
+                        o - o - o - o - o - o
+
+Wrote to the file: '/nfs/home/joel/Documents/orca_sf2/sf2plus/FPExpress.tcl'.
+The Export command succeeded.
+Successfully exported script.
+Project closed.

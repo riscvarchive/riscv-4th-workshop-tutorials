@@ -1,0 +1,8 @@
+obj/
+*.elf
+*.mem
+*.dump
+*.bin
+*.log
+*.coe
+*.hex
