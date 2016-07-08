@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>tb</header>
+  <drc>
+    <status>/nfs/opt/microsemi/Libero_v11.7//Libero/data/drcreport/error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Unused Instance</message>
+    <detail>CLK_GEN_1 output pins are not being used.  Connect or mark them unused</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/instances/CLK_GEN_1</crossprobe>
+  </drc>
+  <drc>
+    <status>/nfs/opt/microsemi/Libero_v11.7//Libero/data/drcreport/warn.png</status>
+    <StatusMessage>Warning</StatusMessage>
+    <message>Floating Driver</message>
+    <detail>Floating output pin CLK_GEN_1:CLK</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/tb/pins/CLK_GEN_1:CLK</crossprobe>
+  </drc>
+</drcreport>

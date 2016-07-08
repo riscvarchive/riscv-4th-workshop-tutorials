@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>my_mss_top</header>
+  <drc>
+    <status>/nfs/opt/microsemi/Libero_v11.7//Libero/data/drcreport/error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Undriven Pin</message>
+    <detail>Unconnected top level output port my_mss_top:DDR_READY</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/my_mss_top/pins/my_mss_top:DDR_READY</crossprobe>
+  </drc>
+</drcreport>

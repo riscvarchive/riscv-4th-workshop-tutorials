@@ -1,0 +1,2 @@
+While analyzing gated clock network, ambiguities have been found on gates CORESPI_0/USPI/UCC/un1_resetn_rx_0_m2:Y.
+The timing models of these gates have been simplified for Static Timing Analysis.

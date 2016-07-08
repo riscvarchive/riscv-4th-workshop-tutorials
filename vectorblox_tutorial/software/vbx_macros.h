@@ -84,6 +84,8 @@ void VBX_SET_THIS_MXP(vbx_mxp_t *POINTER);
 		fname##_nodebug() : \
 		fname##_debug(__LINE__,__FILE__)
 
+#if 0 // do not include debug versions
+
 /** Malloc in scratchpad.
  *
  * @param[in] amount -- number of bytes to allocate
@@ -107,6 +109,8 @@ void VBX_SET_THIS_MXP(vbx_mxp_t *POINTER);
  * @param[in] amount -- number of bytes to allocate
  */
 #define vbx_shared_alloca(amount)  ( VBX_DEBUG_FUNC1( vbx_shared_alloca, amount, alloca(amount+2*VBX_PADDING()) ) )
+
+#endif
 
 
 // ---------------------------------

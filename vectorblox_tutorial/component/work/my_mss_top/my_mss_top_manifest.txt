@@ -1,0 +1,12 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Sat Jul  9 11:12:27 2016
+Project   :  /nfs/home/ryan/orca_new_60/sf2plus
+Component :  my_mss_top
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_top/my_mss_top.v
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_top/my_mss_top.vhd
+

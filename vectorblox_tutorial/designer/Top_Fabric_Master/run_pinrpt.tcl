@@ -1,0 +1,10 @@
+DESIGN=Top_Fabric_Master
+DESDIR=/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master
+TARGET_DIR=/nfs/home/ryan/orca_new_60/sf2plus/designer/Top_Fabric_Master
+FAM=SmartFusion2
+DIE=PA4M6000_N
+PACKAGE=fg484
+PINRPT_BY_NAME=1
+PINRPT_BY_NUMBER=1
+BANK_REPORT=1
+IOREG_REPORT=1

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>Top_Fabric_Master</header>
+  <drc>
+    <status>/nfs/opt/microsemi/Libero_v11.7//Libero/data/drcreport/error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>No Top Level Ports</message>
+    <detail>You must create at least one port for a valid design</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/Top_Fabric_Master/instances/Top_Fabric_Master</crossprobe>
+  </drc>
+</drcreport>

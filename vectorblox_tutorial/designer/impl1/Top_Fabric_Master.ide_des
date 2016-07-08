@@ -1,0 +1,10 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "/nfs/home/ryan/orca_temp/sf2plus/designer/impl1/Top_Fabric_Master.adb"
+LIST SOURCE_FILES
+VALUE "/nfs/home/ryan/orca_temp/sf2plus/constraint/io/Top_Fabric_Master.io.pdc;pdc"
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "/nfs/home/ryan/orca_temp/sf2plus/synthesis/Top_Fabric_Master_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

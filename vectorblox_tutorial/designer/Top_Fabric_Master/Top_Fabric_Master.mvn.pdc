@@ -1,0 +1,61 @@
+# Microsemi Physical design constraints file
+
+# Version: v11.7 11.7.0.119
+
+# Design Name:  
+
+# Input Netlist Format: EDIF 
+
+# Family: SmartFusion2 , Die: M2S060 , Package: 484 FBGA , Speed grade: STD 
+
+# Date generated: Sat Jul  9 11:17:17 2016 
+
+
+#
+# IO banks setting
+#
+
+set_iobank Bank2 -vcci 3.30 -fixed no
+set_iobank Bank4 -vcci 3.30 -fixed no
+set_iobank Bank6 -vcci 3.30 -fixed no
+set_iobank Bank9 -vcci 3.30 -fixed no
+
+#
+# Local clock constraints
+#
+
+
+#
+# Region constraints
+#
+
+
+#
+# I/O constraints
+#
+
+set_io DEVRST_N -DIRECTION INPUT -pinname R15
+set_io LED1_GREEN -DIRECTION OUTPUT -iostd LVCMOS33 -OUT_DRIVE 20 -pinname W9 -fixed yes
+set_io LED2_RED -DIRECTION OUTPUT -iostd LVCMOS33 -OUT_DRIVE 20 -pinname F5 -fixed yes
+set_io LED5B -DIRECTION OUTPUT -iostd LVCMOS33 -OUT_DRIVE 20 -pinname B1 -fixed yes
+set_io LED5G -DIRECTION OUTPUT -iostd LVCMOS33 -OUT_DRIVE 20 -pinname C4 -fixed yes
+set_io LED5R -DIRECTION OUTPUT -iostd LVCMOS33 -OUT_DRIVE 20 -pinname C3 -fixed yes
+set_io RESET_OUT_N -DIRECTION OUTPUT -iostd LVCMOS33 -pinname D5 -fixed yes
+set_io RX -DIRECTION INPUT -iostd LVCMOS33 -pinname G18 -fixed yes
+set_io SPISCLKO -DIRECTION OUTPUT -iostd LVTTL -pinname M21 -fixed yes
+set_io SPISDI -DIRECTION INPUT -iostd LVTTL -pinname M22 -fixed yes
+set_io SPISDO -DIRECTION OUTPUT -iostd LVTTL -pinname L21 -fixed yes
+set_io SPISS -DIRECTION OUTPUT -iostd LVTTL -pinname L20 -fixed yes
+set_io SPISS_COPY -DIRECTION OUTPUT -iostd LVTTL -pinname K16 -fixed yes
+set_io TX -DIRECTION OUTPUT -iostd LVCMOS33 -pinname H19 -fixed yes
+set_io i2s_sck_copy -DIRECTION OUTPUT -iostd LVTTL -pinname E22 -fixed yes
+set_io i2s_sck_i -DIRECTION INPUT -iostd LVTTL -RES_PULL Down -pinname F6 -fixed yes
+set_io i2s_sd_copy -DIRECTION OUTPUT -iostd LVTTL -pinname E4 -fixed yes
+set_io i2s_sd_i -DIRECTION INPUT -iostd LVTTL -pinname H7 -fixed yes
+set_io i2s_ws_copy -DIRECTION OUTPUT -iostd LVTTL -pinname B22 -fixed yes
+set_io i2s_ws_i -DIRECTION INPUT -iostd LVTTL -pinname G6 -fixed yes
+
+#
+# Core cell constraints
+#
+

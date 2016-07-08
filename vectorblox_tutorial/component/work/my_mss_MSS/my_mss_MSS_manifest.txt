@@ -1,0 +1,40 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Sat Jul  9 11:11:54 2016
+Project   :  /nfs/home/ryan/orca_new_60/sf2plus
+Component :  my_mss_MSS
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS.v
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS.vhd
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS_syn.v
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS_syn.vhd
+
+HDL source files for Mentor Precision Synthesis tool:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS_pre.v
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/my_mss_MSS_pre.vhd
+
+Stimulus files for all Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/SmartFusion2MSS/MSS/1.1.400/peripheral_init.bfm
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/CM3_compile_bfm.tcl
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/test.bfm
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/user.bfm
+
+Firmware files for all Software IDE tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/sys_config_mddr_define.h
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/sys_config_mss_clocks.h
+
+Configuration files to be used for Programming:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/ENVM.cfg
+
+Configuration files to be used for all Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/ENVM.cfg
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/MDDR_init.bfm
+
+Configuration files to be used for Power Analysis:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss_MSS/MDDR_init.reg
+

@@ -1,0 +1,42 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Sat Jul  9 11:11:43 2016
+Project   :  /nfs/home/ryan/orca_new_60/sf2plus
+Component :  my_mss
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/ahbtoapb3_pkg.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/components.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_ahbtoapbsm.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_apbaddrdata.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/COREAHBTOAPB3/3.1.100/rtl/vhdl/core/coreahbtoapb3_penablescheduler.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/components.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_addrdec.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_defaultslavesm.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_masterstage.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_matrix4x16.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_pkg.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavearbiter.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAHBLite/5.2.100/rtl/vhdl/core/coreahblite_slavestage.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/components.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_iaddr_reg.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vhdl/core/coreapb3_muxptob3.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreResetP/7.0.104/rtl/vhdl/core/coreresetp_pcie_hotreset.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreSF2Config/3.0.100/rtl/vhdl/core/coresf2config.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/CCC_0/my_mss_CCC_0_FCCC.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/FABOSC_0/my_mss_FABOSC_0_OSC.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/my_mss.v
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/my_mss/my_mss.vhd
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps.vhd
+
+HDL source files for Mentor Precision Synthesis tool:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/SgCore/OSC/2.0.101/osc_comps_pre.vhd
+

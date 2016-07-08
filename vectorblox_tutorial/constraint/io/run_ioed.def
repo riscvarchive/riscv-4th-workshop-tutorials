@@ -1,0 +1,22 @@
+data DESIGN Top_Fabric_Master
+data HPATH '/nfs/home/ryan/orca_new/sf2plus/designer/Top_Fabric_Master'
+data CPATH '/nfs/home/ryan/orca_new/sf2plus/constraint/io'
+data CDIR '/nfs/home/ryan/orca_new/sf2plus/constraint'
+data ETYPE IO
+data FAM SmartFusion2
+data DIE PA4M1000_N
+data PACKAGE fg484
+data HYDRA_EXPORT_DATA 1
+data HYDRA_PRESERVE_DATA_FILES 1
+data VCCI_1.2_VOLTR COM
+data VCCI_1.5_VOLTR COM
+data VCCI_1.8_VOLTR COM
+data VCCI_2.5_VOLTR COM
+data VCCI_3.3_VOLTR COM
+data FLOW_TYPE OLD
+data AFL '/nfs/home/ryan/orca_new/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master.afl'
+data ADL '/nfs/home/ryan/orca_new/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master.adl'
+data LOC '/nfs/home/ryan/orca_new/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master.loc'
+data SEG '/nfs/home/ryan/orca_new/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master.seg'
+data GDEV_SKIP_UNASSIGN_CMP_CHECK    1 
+

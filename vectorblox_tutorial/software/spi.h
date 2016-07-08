@@ -11,7 +11,8 @@
 #define SPI_TXDATA      ((volatile int*) (0x4000000C))
 #define SPI_TXDATALAST  ((volatile int*) (0x40000028))  
 #define SPI_COMMAND     ((volatile int*) (0x4000001C))
-#define SPI_SSEL        ((volatile int*) (0x40000024)) 
+//#define SPI_SSEL        ((volatile int*) (0x40000024)) 
+#define SPI_SSEL        ((volatile int*) (0x600000A0)) // GPIO SSEL
 #define SPI_STATUS      ((volatile int*) (0x40000020))
 #define SPI_INTRAW      ((volatile int*) (0x40000014))
 #define SPI_INTCLR      ((volatile int*) (0x40000004))

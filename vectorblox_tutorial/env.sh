@@ -19,4 +19,4 @@ SNPSLMD_LICENSE_FILE=1702@localhost; export SNPSLMD_LICENSE_FILE
 PATH=$HOME/FPExpress/release/stg/bin:$PATH
 
 #risc-v
-PATH=/opt/riscv/bin:$PATH
+PATH=/opt/riscv/nfs/opt/riscv/bin:$PATH

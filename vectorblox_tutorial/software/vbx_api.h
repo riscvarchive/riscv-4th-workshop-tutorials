@@ -25,16 +25,19 @@ void        _vbx_init( vbx_mxp_t *this_mxp );
 
 // Scratchpad APIs
 
-vbx_void_t *vbx_sp_malloc_nodebug(                      size_t num_bytes );
-vbx_void_t *vbx_sp_malloc_debug( int LINE, const char *FNAME, size_t num_bytes );
+vbx_void_t *vbx_sp_malloc        (                      size_t num_bytes );
+//vbx_void_t *vbx_sp_malloc_nodebug(                      size_t num_bytes );
+//vbx_void_t *vbx_sp_malloc_debug( int LINE, const char *FNAME, size_t num_bytes );
 
-void        vbx_sp_free_debug( int LINE, const char *FNAME );
-void        vbx_sp_free_nodebug();
+void        vbx_sp_free();
+//void        vbx_sp_free_nodebug();
+//void        vbx_sp_free_debug( int LINE, const char *FNAME );
 
 vbx_void_t *vbx_sp_get();
 
-void        vbx_sp_set_nodebug(                      vbx_void_t *new_sp );
-void        vbx_sp_set_debug( int LINE, const char *FNAME, vbx_void_t *new_sp );
+void        vbx_sp_set        (                      vbx_void_t *new_sp );
+//void        vbx_sp_set_nodebug(                      vbx_void_t *new_sp );
+//void        vbx_sp_set_debug( int LINE, const char *FNAME, vbx_void_t *new_sp );
 
 int         vbx_sp_getused();
 int         vbx_sp_getfree();
@@ -75,11 +78,10 @@ __attribute__((always_inline)) static inline void vbx_sp_pop()
 	vbx_mxp_is_initialized(this_mxp);
 	assert(this_mxp->spstack_top > 0);
 	this_mxp->sp = this_mxp->spstack[ --this_mxp->spstack_top ];
-
 }
 
 
-void   vbx_sp_pop_debug( int LINE, const char *FNAME );
+//void   vbx_sp_pop_debug( int LINE, const char *FNAME );
 
 
 // Memory APIs

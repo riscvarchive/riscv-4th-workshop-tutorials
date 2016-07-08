@@ -1,0 +1,9 @@
+KEY IDE_DES_TOOL "Ide"
+KEY IDE_DES_ADB_PATH "E:\Microsemi_prj\AC392_SRAM_Init\FAB_MST_RAM_INIT\designer\impl1\debug_top.adb"
+LIST SOURCE_FILES
+ENDLIST
+LIST OPTIONAL_FILES
+VALUE "E:\Microsemi_prj\AC392_SRAM_Init\FAB_MST_RAM_INIT\synthesis\debug_top_sdc.sdc;Skipped"
+ENDLIST
+LIST VCD_FILES
+ENDLIST

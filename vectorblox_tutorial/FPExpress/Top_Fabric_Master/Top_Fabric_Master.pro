@@ -74,17 +74,17 @@
         </Hardware>
         <Device type="ACTEL">
             <Name>
-                M2S010
+                M2S060
             </Name>
             <Custom>
-                M2S010
+                M2S060
             </Custom>
             <Algo type="STAPL">
                 <filename>
-                    FPExpress/Top_Fabric_Master/M2S010_1.stp
+                    FPExpress/Top_Fabric_Master/M2S060_1.stp
                 </filename>
                 <local>
-                    projectData/M2S010_1.stp
+                    projectData/M2S060_1.stp
                 </local>
                 <SelectedAction>
                     PROGRAM

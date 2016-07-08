@@ -1,0 +1,53 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Sat Jul  9 11:15:03 2016
+Project   :  /nfs/home/ryan/orca_new_60/sf2plus
+Component :  Top_Fabric_Master
+Family    :  SmartFusion2
+
+
+HDL source files for all Synthesis and Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/corespi_pkg.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_chanctrl.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_clockmux.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_control.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_fifo.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CORESPI/5.0.100/rtl/vhdl/core/spi_rf.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/components.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreGPIO/3.1.101/rtl/vhdl/core/coregpio_pkg.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Clock_gen.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUART.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/CoreUARTapb.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Rx_async.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/Tx_async.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/components.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/coreuart_pkg.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/core/fifo_256x8_g4.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/Top_Fabric_Master.vhd
+
+Stimulus files for all Simulation tools:
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/mti/scripts/bfmtovec_compile.do
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/mti/scripts/coreuart_usertb_apb_master.bfm
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/mti/scripts/coreuart_usertb_include.bfm
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/mti/scripts/wave_vhdl_amba.do
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/subsystem.bfm
+
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_ahbl.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_ahblapb.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_ahbslave.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_ahbslaveext.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_ahbtoapb.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_apb.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_apbslave.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_apbslaveext.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_apbtoapb.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_main.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/bfm_package.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/misc.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/Actel/DirectCore/CoreUARTapb/5.5.101/rtl/vhdl/amba_bfm/textio.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/coreparameters.vhd
+    /nfs/home/ryan/orca_new_60/sf2plus/component/work/Top_Fabric_Master/CoreUARTapb_0/rtl/vhdl/test/user/testbench.vhd
+

@@ -1,0 +1,3 @@
+"my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL0",80,"my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL0","my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL0"
+"my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL1",40,"my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL1","my_mss_top_0/my_mss_0/CCC_0/CCC_INST/INST_CCC_IP:GL1"
+"my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT",20,"my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT","my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ:CLKOUT"

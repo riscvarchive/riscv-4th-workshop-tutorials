@@ -94,6 +94,7 @@ extern "C" {
 
 
 // The order below must not be altered
+#include "mxp_system.h"
 #include "vbx_types.h"
 #include "vbx_extern.h"
 #include "vbx_macros.h"

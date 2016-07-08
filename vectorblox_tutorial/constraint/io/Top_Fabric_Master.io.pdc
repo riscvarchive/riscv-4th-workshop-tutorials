@@ -1,0 +1,167 @@
+# Microsemi I/O Physical Design Constraints file
+# Auto Generated User I/O Constraints file
+
+# Version: v11.2 SP1 11.2.1.8
+# Family: SmartFusion2 , Die: M2S050T , Package: 896 FBGA
+# Date generated: Mon Feb 10 18:35:48 2014 
+
+
+# 
+# User Locked I/O Bank Settings
+# 
+
+
+# 
+# Unlocked I/O Bank Settings
+# The I/O Bank Settings can be locked by directly editing this file
+# or by making changes in the I/O Attribute Editor
+# 
+
+
+# 
+# User Locked I/O settings
+# 
+
+
+set_io LED1_GREEN      \
+    -pinname W9        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+
+set_io LED2_RED        \
+    -pinname F5        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+
+set_io LED5B           \
+    -pinname B1        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+
+set_io LED5G           \
+    -pinname C4        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+
+set_io LED5R           \
+    -pinname C3        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -OUT_DRIVE 20      \
+    -DIRECTION OUTPUT
+
+set_io RX           \
+    -pinname G18        \
+    -fixed yes         \
+    -iostd LVCMOS33    \
+    -DIRECTION INPUT
+
+set_io TX           \
+    -pinname H19       \
+    -fixed yes         \
+    -iostd LVCMOS33   \
+    -DIRECTION OUTPUT
+
+#set_io TEST_1 \
+    -pinname A2 \
+    -fixed yes \
+    -iostd LVCMOS33 \
+    -DIRECTION OUTPUT
+
+set_io i2s_sck_i \
+    -pinname F6 \
+    -fixed yes \
+    -iostd LVTTL \
+    -RES_PULL Down \
+    -direction OUTPUT
+
+set_io i2s_sd_i \
+    -pinname H7 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION INPUT
+
+set_io i2s_ws_i \
+    -pinname G6 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io SPISCLKO \
+    -pinname M21 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io SPISS \
+    -pinname L20 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+# for debug purposes
+set_io SPISS_COPY \
+    -pinname K16 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io SPISDI \
+    -pinname M22 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION INPUT
+
+set_io SPISDO \
+    -pinname L21 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+    
+set_io RESET_OUT_N \
+    -pinname D5 \
+    -fixed yes  \
+    -iostd LVCMOS33 \
+    -DIRECTION OUTPUT
+
+set_io i2s_sd_copy \
+    -pinname E4 \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io i2s_sck_copy \
+    -pinname E22    \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTION OUTPUT
+
+set_io i2s_ws_copy \
+    -pinname B22    \
+    -fixed yes \
+    -iostd LVTTL \
+    -DIRECTIOn OUTPUT
+
+# 
+# Dedicated Peripheral I/O Settings
+# 
+
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+

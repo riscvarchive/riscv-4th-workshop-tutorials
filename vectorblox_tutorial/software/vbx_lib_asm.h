@@ -23,8 +23,8 @@
 
  __attribute__((always_inline)) inline static void _vbx_sync ()
 {
-	uint32_t t;
-	VBX_INSTR_SINGLE((((VBX_OP_SYNC) << (VBX_OPCODE_SHIFT)) | (VBX_OP_EXT)),t);
+	uint32_t t=0;
+	VBX_INSTR_SINGLE((((VBX_OP_SYNC) << (VBX_OPCODE_SHIFT)) | (VBX_OP_EXT) | t),t);
 }
 
 __attribute__((always_inline)) inline static void _vbx_dma_to_host( void *EXT, vbx_void_t *INT, int LENGTH )

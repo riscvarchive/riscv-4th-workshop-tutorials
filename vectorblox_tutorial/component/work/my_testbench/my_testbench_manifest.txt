@@ -1,0 +1,13 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Tue May 31 11:20:58 2016
+Project   :  /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT
+Component :  my_testbench
+Family    :  SmartFusion2
+
+
+Stimulus files for all Simulation tools:
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/Actel/Simulation/RESET_GEN/1.0.1/RESET_GEN.vhd
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_testbench/my_testbench.v
+    /home/ryan/work_riscV/orca/FAB_MSTR_RAM_INIT/component/work/my_testbench/my_testbench.vhd
+

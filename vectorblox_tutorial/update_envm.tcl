@@ -15,7 +15,7 @@ set_envm_update -data_name {MyProgData} -client_name {IMEM}\
 # Note: that this bitstream will program all eNVM clients available in design.
 #       If you need to program only specific client(s), use "-envm_clients" option
 init_bitstream -data_name {MyProgData} -bitstream_name {MyBitstreamENVM}\
-	 -bitstream_type {TRUSTED_FACILITY} -features {FABRIC ENVM}
+	 -bitstream_type {TRUSTED_FACILITY} -features {ENVM}
 
 # Export STAPL bitstream into specified path
 export_bitstream_file -data_name {MyProgData} -bitstream_name {MyBitstreamENVM} -formats {STAPL} -export_path {./MyBItstreamFileENVM}

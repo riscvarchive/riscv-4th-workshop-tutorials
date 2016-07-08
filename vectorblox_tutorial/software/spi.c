@@ -3,18 +3,21 @@
 
 void SPI_set_ss(int slave) {
   *SPI_CONTROL1 = CTRL_ENABLE_MASTER_MASK; 
-  *SPI_SSEL |= (0x00000001 << slave);
+  // Set SS to LOW
+  *SPI_SSEL &= (~(0x00000001 << slave));
+  //*SPI_SSEL |= (0x00000001 << slave);
 }
 
 void SPI_clear_ss(int slave) {
   *SPI_INTCLR |= TX_DONE_INT_MASK;
-  *SPI_SSEL &= (~(0x00000001 << slave));
+  // Set SS to HIGH
+  *SPI_SSEL |= (0x00000001 << slave);
+  //*SPI_SSEL &= (~(0x00000001 << slave));
 }
 
 void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8_t *rd_buffer, uint16_t rd_byte_size) {
 
   uint32_t frame_count;
-  volatile uint32_t rx_raw;
   uint32_t transfer_size;
   uint32_t done_flag = 0;
 
@@ -36,7 +39,7 @@ void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8
   *SPI_COMMAND |= (RX_FIFO_RESET_MASK | TX_FIFO_RESET_MASK); 
 
   while(!((*SPI_STATUS) & RX_FIFO_EMPTY_MASK)) {
-    rx_raw = *SPI_RXDATA;
+    (void)*SPI_RXDATA;
   }
 
   /* Send over the command bytes */
@@ -44,7 +47,7 @@ void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8
     while((*SPI_STATUS) & TX_FIFO_FULL_MASK);
     if (frame_count == (transfer_size-1)) {
       *SPI_TXDATALAST = cmd_buffer[frame_count++];
-      printf("Tx Last\r\n");
+//      printf("Tx Last\r\n");
       /* done_flag is to handle command-only transactions */
       done_flag = 1;
     }
@@ -52,7 +55,7 @@ void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8
       *SPI_TXDATA = cmd_buffer[frame_count++];
     }
     while((*SPI_STATUS) & RX_FIFO_EMPTY_MASK);
-    rx_raw = *SPI_RXDATA;
+    (void)*SPI_RXDATA;
   }
   /* No need to read to receive buffer in this case */
   if (done_flag) {
@@ -65,7 +68,7 @@ void SPI_transfer_block(const uint8_t *cmd_buffer, uint16_t cmd_byte_size, uint8
     while((*SPI_STATUS) & TX_FIFO_FULL_MASK);
     if (frame_count == (rd_byte_size-1)) {
       *SPI_TXDATALAST = 0x00;
-      printf("Last\r\n");
+//      printf("Rx Last\r\n");
     }
     else {
       *SPI_TXDATA = 0x00;

@@ -1,0 +1,81 @@
+#===========================================================
+#
+# Syntax:
+# -------
+#
+# memmap    resource_name base_address;
+#
+# write     width resource_name byte_offset data;
+# read      width resource_name byte_offset;
+# readcheck width resource_name byte_offset data;
+# wait      clock_ticks;
+# poll      width resource_name byte_offset bit_mask;
+#
+#===========================================================
+
+
+#-----------------------------------------------------------
+# Memory Map
+# Define name and base address of each resource.
+#-----------------------------------------------------------
+memmap slave 0x00000000;
+
+
+// global variables to store local copy of testbench parameters and constants
+// derived from testbench parameters
+int FAMILY AHBSLOT0ENABLE 
+
+procedure main
+header "CoreAHBtoAPB3 Master Test Harness"
+debug 1;
+
+// initialize local variables passed from testbench HDL to the
+// ARGVALUE* BFM parameters
+call init_parameter_vars
+
+# Slave 
+# Test byte/halfword/word writes and reads
+      print " Write to Slave from Master "
+      write     w slave 0x0 0x12345678;
+      write     w slave 0x4 0x01234567;
+      print " Read and Verify from Slave for Master "
+      readcheck w slave 0x0 0x12345678;
+      readcheck w slave 0x4 0x01234567;
+      print " Write to Slave from Master "
+      write     w slave 0x8 0xdead1234;
+      write     w slave 0xC 0xbeef5678;
+      print " Read and Verify from Slave for Master "
+      readcheck w slave 0xC 0xbeef5678;
+      readcheck w slave 0x8 0xdead1234;
+      print " Write to Slave from Master "
+      write     w slave 0x10 0xdeadbeef;
+      write     w slave 0x14 0x1234569a;
+      write     w slave 0x18 0xFFFFFFFF;
+      write     w slave 0x1C 0xa5a5a5a5;
+      print " Read and Verify from Slave for Master "
+      readcheck w slave 0x10 0xdeadbeef;
+      readcheck w slave 0x14 0x1234569a;
+      readcheck w slave 0x18 0xFFFFFFFF;
+      readcheck w slave 0x1C 0xa5a5a5a5;
+      print " Write to Slave from Master "
+      write     w slave 0x20 0xdeadbeef;
+      write     w slave 0x24 0x1234569a;
+      write     w slave 0x28 0xFFFFFFFF;
+      write     w slave 0x2C 0xa5a5a5a5;
+
+      print " Read and Verify from Slave for Master "
+      readcheck w slave 0x2C 0xa5a5a5a5;
+      readcheck w slave 0x28 0xFFFFFFFF;
+      readcheck w slave 0x24 0x1234569a;
+      readcheck w slave 0x20 0xdeadbeef;
+
+return
+
+//---------------------------------------------------------------------------
+// initialize local variables from the ARGVALUE* BFM parameters passed
+// down from the testbench HDL
+//---------------------------------------------------------------------------
+procedure init_parameter_vars
+	set FAMILY			        $ARGVALUE0
+	set AHBSLOT0ENABLE			$ARGVALUE1
+return

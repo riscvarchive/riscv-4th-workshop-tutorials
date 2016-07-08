@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<?xml-stylesheet type="text/xsl" href="drcss.xsl"?>
+<drcreport>
+  <header>my_mss</header>
+  <drc>
+    <status>/nfs/opt/microsemi/Libero_v11.7//Libero/data/drcreport/error.png</status>
+    <StatusMessage>Error</StatusMessage>
+    <message>Incompatible with Libero version</message>
+    <detail>my_mss_MSS_0's core version is not supported by this version of the Libero SoC software.
+To change the MSS component version, select the component in the Design Hierarchy, right-click, and choose 'Replace Component Version...'.</detail>
+    <crossprobe>liberoaction://cross_probe/smartdesign/my_mss/instances/my_mss_MSS_0</crossprobe>
+  </drc>
+</drcreport>

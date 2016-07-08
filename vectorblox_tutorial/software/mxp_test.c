@@ -1,25 +1,21 @@
 #include "printf.h"
-#define MXP_HALF_FXP_BITS    15
-#define MXP_DATA_SPAN        (8*1024)
-#define MXP_SCRATCHPAD_BASE  0x10000000
-#define MXP_INSTRUCTION_BASE 0x20000000
 #include "vbx.h"
 #include "main.h"
 
 //For HDL simulation, run shorter tests, don't print full output
 #define SIMULATION        0
-#define TEST_SCRATCHPAD   0
-#define TEST_INSTRUCTIONS 0
-#define TEST_ACC          0
-#define TEST_ACC_WORD     0
-#define TEST_2D           0
+#define TEST_SCRATCHPAD   1
+#define TEST_INSTRUCTIONS 1
+#define TEST_ACC          1
+#define TEST_ACC_WORD     1
+#define TEST_2D           1
 
-#define TEST_INSTR_MUL     0
-#define TEST_INSTR_MULHI   0
-#define TEST_INSTR_MULFXP  0
-#define TEST_INSTR_SHL     0
-#define TEST_INSTR_SHR     0
-#define TEST_INSTR_CMV_LTZ 0
+#define TEST_INSTR_MUL     1
+#define TEST_INSTR_MULHI   1
+#define TEST_INSTR_MULFXP  1
+#define TEST_INSTR_SHL     1
+#define TEST_INSTR_SHR     1
+#define TEST_INSTR_CMV_LTZ 1
 
 #if SIMULATION
 #define TEST_LENGTH 128 
@@ -34,7 +30,10 @@ int mxp_test(){
 	unsigned int start_time;
 	unsigned int end_time;
 
-	vbx_uhalf_t *v_data = (vbx_uhalf_t *)MXP_SCRATCHPAD_BASE;
+	//VectorBlox_MXP_Initialize();
+
+	//vbx_uhalf_t *v_data = (vbx_uhalf_t *)MXP_SCRATCHPAD_BASE;
+	vbx_uhalf_t *v_data = (vbx_uhalf_t *)vbx_sp_malloc( TEST_LENGTH * sizeof(vbx_uhalf_t) );
 
 #if TEST_SCRATCHPAD
 	local_errors = 0;
@@ -382,6 +381,7 @@ int mxp_test(){
 	} else {
 		printf("MXP test passed!\r\n");
 	}
+	vbx_sp_free();
 
 	return errors;
 }

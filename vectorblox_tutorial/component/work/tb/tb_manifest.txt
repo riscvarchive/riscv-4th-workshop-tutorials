@@ -1,0 +1,13 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+
+Date      :  Sat Jul  9 09:29:08 2016
+Project   :  /nfs/home/ryan/orca_new/sf2plus
+Component :  tb
+Family    :  SmartFusion2
+
+
+Stimulus files for all Simulation tools:
+    /nfs/home/ryan/orca_new/sf2plus/component/Actel/Simulation/CLK_GEN/1.0.1/CLK_GEN.vhd
+    /nfs/home/ryan/orca_new/sf2plus/component/Actel/Simulation/RESET_GEN/1.0.1/RESET_GEN.vhd
+    /nfs/home/ryan/orca_new/sf2plus/component/work/tb/tb.vhd
+

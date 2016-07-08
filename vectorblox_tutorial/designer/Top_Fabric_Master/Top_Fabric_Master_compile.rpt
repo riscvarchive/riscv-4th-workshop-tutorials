@@ -1,0 +1,244 @@
+Compile Report
+Microsemi Corporation - Microsemi Libero Software Release v11.7 (Version 11.7.0.119)
+Date: Sat Jul  9 11:17:16 2016
+
+Device Selection
++--------------------------------+----------------+
+| Family                         | SmartFusion2   |
+| Device                         | M2S060         |
+| Package                        | 484 FBGA       |
+| Speed Grade                    | STD            |
+| Temp                           | 0:25:85        |
+| Voltage                        | 1.26:1.20:1.14 |
+| Core Voltage                   | 1.2V           |
+| Ramp Rate                      | 100ms Minimum  |
+| System Controller Suspend Mode | No             |
+| PLL Supply Voltage             | 2.5V           |
+| Default I/O technology         | LVCMOS 2.5V    |
+| Restrict Probe Pins            | Yes            |
+| Restrict SPI Pins              | No             |
++--------------------------------+----------------+
+
+Source Files
++---------+---------------------------------------------------------------------------+
+| Topcell | Top_Fabric_Master                                                         |
+| Format  | EDIF                                                                      |
+| Source  | /nfs/home/ryan/orca_new_60/sf2plus/synthesis/Top_Fabric_Master.edn        |
+| Source  | /nfs/home/ryan/orca_new_60/sf2plus/constraint/io/Top_Fabric_Master.io.pdc |
++---------+---------------------------------------------------------------------------+
+
+Options
++---------------------------------------------------------+-------+
+| Merge User SDC file(s) with Existing Timing Constraints | true  |
+| Abort Compile if errors are found in PDC file(s)        | true  |
+| Enable Single Event Transient mitigation                | false |
+| Enable Design Separation Methodology                    | false |
+| Limit the number of high fanout nets to display to      | 10    |
++---------------------------------------------------------+-------+
+
+Resource Usage
++---------------------------+-------+-------+------------+
+| Type                      | Used  | Total | Percentage |
++---------------------------+-------+-------+------------+
+| 4LUT                      | 10499 | 56520 | 18.58      |
+| DFF                       | 6703  | 56520 | 11.86      |
+| I/O Register              | 0     | 795   | 0.00       |
+| User I/O                  | 19    | 265   | 7.17       |
+| -- Single-ended I/O       | 19    | 265   | 7.17       |
+| -- Differential I/O Pairs | 0     | 132   | 0.00       |
+| RAM64x18                  | 16    | 72    | 22.22      |
+| RAM1K18                   | 9     | 69    | 13.04      |
+| MACC                      | 7     | 72    | 9.72       |
+| Chip Globals              | 9     | 16    | 56.25      |
+| CCC                       | 1     | 6     | 16.67      |
+| RCOSC_25_50MHZ            | 1     | 1     | 100.00     |
+| RCOSC_1MHZ                | 0     | 1     | 0.00       |
+| XTLOSC                    | 0     | 1     | 0.00       |
+| MSS                       | 1     | 1     | 100.00     |
++---------------------------+-------+-------+------------+
+
+Detailed Logic Resource Usage
++--------------------------+-------+------+
+| Type                     | 4LUT  | DFF  |
++--------------------------+-------+------+
+| Fabric Logic             | 9347  | 5551 |
+| RAM64x18 Interface Logic | 576   | 576  |
+| RAM1K18 Interface Logic  | 324   | 324  |
+| MACC Interface Logic     | 252   | 252  |
+| Total Used               | 10499 | 6703 |
++--------------------------+-------+------+
+
+MSS Resource Usage
++---------------+------+-------+
+| Type          | Used | Total |
++---------------+------+-------+
+| Cortex-M3*    | 1    | 1     |
+| eNVM (256KB)* | 1    | 1     |
+| eSRAM*        | 2    | 2     |
+| TIMER*        | 2    | 2     |
+| CAN           | 0    | 1     |
+| SPI           | 0    | 2     |
+| I2C           | 0    | 2     |
+| UART          | 1    | 2     |
+| USB           | 0    | 1     |
+| MAC           | 0    | 1     |
+| MDDR          | 0    | 1     |
+| HPDMA         | 0    | 1     |
+| PDMA          | 0    | 1     |
++---------------+------+-------+
+
+* These resources are always marked as used when you are using the MSS
+
+Detailed Carry Chains Resource Usage
++--------+------+
+| Length | Used |
+| 6      | 2    |
+| 7      | 3    |
+| 8      | 1    |
+| 9      | 7    |
+| 10     | 5    |
+| 11     | 10   |
+| 12     | 6    |
+| 13     | 43   |
+| 14     | 23   |
+| 15     | 13   |
+| 17     | 2    |
+| 18     | 2    |
+| 20     | 1    |
+| 30     | 3    |
+| 31     | 3    |
+| 32     | 2    |
+| 33     | 1    |
+| 34     | 2    |
+| 40     | 1    |
+| 64     | 2    |
+| Total  | 132  |
++--------+------+
+
+Detailed MACC Resource Usage
++--------+------+
+| Length | Used |
+| 1      | 3    |
+| 4      | 1    |
+| Total  | 4    |
++--------+------+
+
+I/O Function
++-------------------------------+--------------+-------------+-----------------+
+| Type                          | w/o register | w/ register | w/ DDR register |
++-------------------------------+--------------+-------------+-----------------+
+| Input I/O                     | 5            | 0           | 0               |
+| Output I/O                    | 14           | 0           | 0               |
+| Bidirectional I/O             | 0            | 0           | 0               |
+| Differential Input I/O Pairs  | 0            | 0           | 0               |
+| Differential Output I/O Pairs | 0            | 0           | 0               |
++-------------------------------+--------------+-------------+-----------------+
+
+I/O Technology
++--------------+--------+------+-------+--------+---------------+
+| I/O Standard | Vddi   | Vref | Input | Output | Bidirectional |
++--------------+--------+------+-------+--------+---------------+
+| LVTTL        |  3.30v |  N/A |  4    |  7     |  0            |
+| LVCMOS33     |  3.30v |  N/A |  1    |  7     |  0            |
++--------------+--------+------+-------+--------+---------------+
+
+I/O Placement
++----------+-------+------------+
+| Type     | Count | Percentage |
++----------+-------+------------+
+| Locked   |  19   | 100.00%    |
+| Placed   |  0    | 0.00%      |
+| UnPlaced |  0    | 0.00%      |
++----------+-------+------------+
+
+Nets assigned to chip global resources
++--------+---------+--------------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                       |
++--------+---------+--------------------------------------------------------------------------------------------+
+| 5341   | INT_NET | Net   : my_mss_top_0_FIC_0_CLK                                                             |
+|        |         | Driver: my_mss_top_0/my_mss_0/CCC_0/GL0_INST/U0_RGB1                                       |
+|        |         | Source: NETLIST                                                                            |
+| 470    | INT_NET | Net   : my_mss_top_0_MSS_READY                                                             |
+|        |         | Driver: my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int_RNITLPC/U0_RGB1              |
+|        |         | Source: NETLIST                                                                            |
+| 227    | INT_NET | Net   : my_mss_top_0_GL1                                                                   |
+|        |         | Driver: my_mss_top_0/my_mss_0/CCC_0/GL1_INST/U0_RGB1                                       |
+|        |         | Source: NETLIST                                                                            |
+| 128    | INT_NET | Net   : riscV_axi_0/orca_reset                                                             |
+|        |         | Driver: riscV_axi_0/orca_reset_0_RNIR5E4/U0_RGB1                                           |
+|        |         | Source: NETLIST                                                                            |
+| 59     | INT_NET | Net   : my_mss_top_0/my_mss_0/CoreSF2Config_0_APB_S_PRESET_N                               |
+|        |         | Driver: my_mss_top_0/my_mss_0/my_mss_MSS_0/MSS_ADLIB_INST_RNIEFPC/U0_RGB1                  |
+|        |         | Source: NETLIST                                                                            |
+| 57     | INT_NET | Net   : my_mss_top_0/my_mss_0/CoreSF2Config_0_APB_S_PCLK                                   |
+|        |         | Driver: my_mss_top_0/my_mss_0/my_mss_MSS_0/FIC_2_APB_M_PCLK_inferred_clock_RNI6HD4/U0_RGB1 |
+|        |         | Source: NETLIST                                                                            |
+| 26     | INT_NET | Net   : CORESPI_0/USPI/UCC/un1_resetn_tx_i                                                 |
+|        |         | Driver: CORESPI_0/USPI/UCC/un1_resetn_tx_0_RNI80K2/U0_RGB1                                 |
+|        |         | Source: NETLIST                                                                            |
+| 14     | INT_NET | Net   : my_mss_top_0/my_mss_0/CORERESETP_0/sm0_areset_n_clk_base                           |
+|        |         | Driver: my_mss_top_0/my_mss_0/CORERESETP_0/sm0_areset_n_clk_base_RNI8TL8/U0_RGB1           |
+|        |         | Source: NETLIST                                                                            |
+| 3      | INT_NET | Net   : my_mss_top_0/my_mss_0/FABOSC_0_RCOSC_25_50MHZ_O2F                                  |
+|        |         | Driver: my_mss_top_0/my_mss_0/FABOSC_0/I_RCOSC_25_50MHZ_FAB_CLKINT/U0_RGB1                 |
+|        |         | Source: NETLIST                                                                            |
++--------+---------+--------------------------------------------------------------------------------------------+
+
+Nets assigned to row global resources
++--------+------+------+
+| Fanout | Type | Name |
++--------+------+------+
++--------+------+------+
+
+High fanout nets
++--------+---------+----------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                   |
++--------+---------+----------------------------------------------------------------------------------------+
+| 2047   | INT_NET | Net   : my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int                          |
+|        |         | Driver: my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int                          |
+| 211    | INT_NET | Net   : vectorblox_mxp_0/stall_i_0                                                     |
+|        |         | Driver: vectorblox_mxp_0/core/address_generation/instr_hazard_RNIVDOJ                  |
+| 196    | INT_NET | Net   : riscV_axi_0/rv/execute_stalled_i_3                                             |
+|        |         | Driver: riscV_axi_0/rv/X/alu/stall_pipeline_i_0                                        |
+| 154    | INT_NET | Net   : vectorblox_mxp_0/fsl_handler_inst/instr_fifo/un1_data_out_1_sqmuxa_reto        |
+|        |         | Driver: vectorblox_mxp_0/fsl_handler_inst/instr_fifo/data_out_ret_152                  |
+| 114    | INT_NET | Net   : vectorblox_mxp_0/scratch_port_c[0]                                             |
+|        |         | Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[0]                                 |
+| 113    | INT_NET | Net   : riscV_axi_0/orca_reset_0                                                       |
+|        |         | Driver: riscV_axi_0/orca_reset_0                                                       |
+| 101    | INT_NET | Net   : vectorblox_mxp_0/scratch_port_c[1]                                             |
+|        |         | Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[1]                                 |
+| 97     | INT_NET | Net   : vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0] |
+|        |         | Driver: vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0] |
+| 95     | INT_NET | Net   : vectorblox_mxp_0/dma_master/queue/N_29_mux_i_0                                 |
+|        |         | Driver: vectorblox_mxp_0/dma_master/queue/queue_1.valid_RNI5NNF1                       |
+| 95     | INT_NET | Net   : CFG0_GND_INST_NET                                                              |
+|        |         | Driver: CFG0_GND_INST                                                                  |
++--------+---------+----------------------------------------------------------------------------------------+
+
+High fanout nets (through buffer trees)
++--------+---------+----------------------------------------------------------------------------------------+
+| Fanout | Type    | Name                                                                                   |
++--------+---------+----------------------------------------------------------------------------------------+
+| 2047   | INT_NET | Net   : my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int                          |
+|        |         | Driver: my_mss_top_0/my_mss_0/CORERESETP_0/MSS_HPMS_READY_int                          |
+| 211    | INT_NET | Net   : vectorblox_mxp_0/stall_i_0                                                     |
+|        |         | Driver: vectorblox_mxp_0/core/address_generation/instr_hazard_RNIVDOJ                  |
+| 196    | INT_NET | Net   : riscV_axi_0/rv/execute_stalled_i_3                                             |
+|        |         | Driver: riscV_axi_0/rv/X/alu/stall_pipeline_i_0                                        |
+| 154    | INT_NET | Net   : vectorblox_mxp_0/fsl_handler_inst/instr_fifo/un1_data_out_1_sqmuxa_reto        |
+|        |         | Driver: vectorblox_mxp_0/fsl_handler_inst/instr_fifo/data_out_ret_152                  |
+| 114    | INT_NET | Net   : vectorblox_mxp_0/scratch_port_c[0]                                             |
+|        |         | Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[0]                                 |
+| 113    | INT_NET | Net   : riscV_axi_0/orca_reset_0                                                       |
+|        |         | Driver: riscV_axi_0/orca_reset_0                                                       |
+| 101    | INT_NET | Net   : vectorblox_mxp_0/scratch_port_c[1]                                             |
+|        |         | Driver: vectorblox_mxp_0/core/accum_stage/dest_addr[1]                                 |
+| 97     | INT_NET | Net   : vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0] |
+|        |         | Driver: vectorblox_mxp_0/core/exec_stage/byte_mul_gen.multiplier_stage/end_mul_type[0] |
+| 95     | INT_NET | Net   : vectorblox_mxp_0/dma_master/queue/N_29_mux_i_0                                 |
+|        |         | Driver: vectorblox_mxp_0/dma_master/queue/queue_1.valid_RNI5NNF1                       |
+| 95     | INT_NET | Net   : CFG0_GND_INST_NET                                                              |
+|        |         | Driver: CFG0_GND_INST                                                                  |
++--------+---------+----------------------------------------------------------------------------------------+
+

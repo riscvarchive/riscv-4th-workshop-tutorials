@@ -1,0 +1,16 @@
+Software Version: 11.7.0.119
+Opened '/nfs/home/joel/Documents/orca_sf2/sf2plus/designer/Top_Fabric_Master/Top_Fabric_Master_fp/Top_Fabric_Master.pro'
+The 'open_project' command succeeded.
+PDB file '/nfs/home/joel/Documents/orca_sf2/sf2plus/designer/Top_Fabric_Master/6efd3db5-00b8-4017-8cb8-2017ccb82017.pdb' has been loaded successfully.
+DESIGN : Top_Fabric_Master;  CHECKSUM : 0C45;  PDB_VERSION : 1.9
+The 'load_programming_data' command succeeded.
+Successfully exported STAPL file: '/nfs/home/joel/Documents/orca_sf2/sf2plus/Top_Fabric_Master_M2S010.stp'; file programs Fabric and eNVM.
+Fabric component digest: 4f4388974bad0d9a242f3ff4ed86a6b97cf4973a2f3980e7d4d9053c92df198f
+eNVM component digest: ed328a55ff094343751b3b77f73f061eb6b562f239d15731fd91ea96f92f6e2a
+Finished: Thu Jul  7 12:55:13 2016 (Elapsed time 00:00:11)
+
+The 'export_single_stapl' command succeeded.
+The 'set_programming_file' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
