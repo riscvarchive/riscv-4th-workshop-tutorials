@@ -16,14 +16,14 @@ Get code
 -----------
 * Open terminal
 
-    $git clone  https://github.com/Technolution/riscv-security-tutorial.git
+    $git clone https://github.com/riscv/riscv-4th-workshop-tutorials.git
     
 Program FPGA
 -----------
     $./start_FPExpress
     
 * Click New..
-* Select programming job file: riscv-security-tutorial/fpga/sf2_1_full.job
+* Select programming job file: riscv-4th-workshop-tutorials/technolution_tutorial/fpga/sf2_1_full.job
 
 ![Settings terminal](manual/img/new-job-flash.png?raw=true "FPExpress programming startup windows")
 * Click the large RUN button
@@ -33,12 +33,12 @@ see a command prompt.
 
 Make FreeRTOS application
 -------------------------
-	$ cd riscv-security-tutorial/appl/
+	$ cd riscv-4th-workshop-tutorials/technolution_tutorial/appl/
 	$ make
 	
 Open serial terminal
 -----------
-    $ cd riscv-security-tutorial/tools/terminal
+    $ cd riscv-4th-workshop-tutorials/technolution_tutorial/tools/terminal
     $ ./wxTerminal.pyw
     
 * Select port: /dev/ttyUSB2
@@ -61,7 +61,7 @@ Make exploit
 This is a simple application that will download and create an buffer overflow. It will cause the leds to create an 
 invalid combination.
 
-	$ cd riscv-security-tutorial/exploit/
+	$ cd riscv-4th-workshop-tutorials/technolution_tutorial/exploit/
 	$ make
 	
 Upload exploit & payload
@@ -74,7 +74,7 @@ and only visible when you hover with the mouse over the tob bar.
 
 ![Upload blob](manual/img/upload_blob.png?raw=true "Tools -> Upload Blob...")
 
-* Select riscv-security-tutorial/exploit/build/exploit.raw 
+* Select riscv-4th-workshop-tutorials/technolution_tutorial/exploit/build/exploit.raw 
 	
 
 Exploit bootstrapping
@@ -87,7 +87,7 @@ Make exploit downloader
 This is a simple application that will download and create an buffer overflow. It will cause the leds to create an 
 invalid combination.
 
-    $ cd riscv-security-tutorial/exploit_downloader/
+    $ cd riscv-4th-workshop-tutorials/technolution_tutorial/exploit_downloader/
     $ make
     
 
@@ -96,19 +96,19 @@ Make payload
 The payload is a simple application that will force the leds in an invalid combination and print to the terminal.
 It is however to big to load in the exploitable buffer directly.
 
-	$ cd riscv-security-tutorial/payload/
+	$ cd riscv-4th-workshop-tutorials/technolution_tutorial/payload/
 	$ make
 
 
 Upload exploit & payload
 -----------
 * Tools > Upload blob..
-* Select riscv-security-tutorial/exploit_downloader/build/exploit_downloader.raw 
+* Select riscv-4th-workshop-tutorials/technolution_tutorial/exploit_downloader/build/exploit_downloader.raw 
 * See ready...
 
 ![exploit](manual/img/exploit.png?raw=true "exploit")
 * Tools > Upload blob..
-* Select riscv-security-tutorial/payload/build/payload.raw
+* Select riscv-4th-workshop-tutorials/technolution_tutorial/payload/build/payload.raw
 * See HACKED
 
 ![HACKED](manual/img/hacked.png?raw=true "HACKED")
