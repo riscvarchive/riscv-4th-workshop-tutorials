@@ -1,0 +1,10 @@
+.project
+.cproject
+.pydevproject
+.settings/*
+
+*/build/*
+*/*/build/*
+
+tools/terminal/*.pyc
+
