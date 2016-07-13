@@ -315,6 +315,7 @@ class TerminalFrame(wx.Frame):
         for ch in data:
             wx.Yield()
             self.serial.write(chr(ch))
+ 	time.sleep(0.2)
         self.serial.write("\n")
                 
     def OnTermSettings(self, event):  # wxGlade: TerminalFrame.<event_handler>
@@ -331,10 +332,18 @@ class TerminalFrame(wx.Frame):
         Key event handler. If the key is in the ASCII range, write it to the
         serial port. Newline handling and local echo is also done here.
         """
+
         code = event.GetUnicodeKey()
+
+	if code >= 224 and code <= 333: #convert numerical keypad
+	    code = code - 224 + ord('0')
+	if code == 390:
+	    code = ord('-')
+	if code == 388:
+	    code = ord('+')
         if code < 256:   # XXX bug in some versions of wx returning only capital letters
             code = event.GetKeyCode()
-        if code == 13:                      # is it a newline? (check for CR which is the RETURN key)
+        if code == 13 or code == 370:                      # is it a newline? (check for CR which is the RETURN key)
             if self.settings.echo:          # do echo if needed
                 self.text_ctrl_output.AppendText('\n')
             if self.settings.newline == NEWLINE_CR:
