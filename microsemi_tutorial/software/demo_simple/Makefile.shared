@@ -1,0 +1,68 @@
+
+SHARED_DIR = $(SF_WORKDIR)/software/shared
+
+ASM_SRCS += $(SHARED_DIR)/entry.S
+
+C_SRCS += $(SHARED_DIR)/hal/hw_reg_access.c
+C_SRCS += $(SHARED_DIR)/init.c
+C_SRCS += $(SHARED_DIR)/syscall.c
+C_SRCS += $(SHARED_DIR)/drivers/CoreGPIO/core_gpio.c
+C_SRCS += $(SHARED_DIR)/drivers/CoreUARTapb/core_uart_apb.c
+C_SRCS += $(SHARED_DIR)/drivers/CoreTimer/core_timer.c
+C_SRCS += $(SHARED_DIR)/drivers_sifive/plic.c
+
+LINKER_SCRIPT := $(SHARED_DIR)/link.lds
+#LINKER_SCRIPT := $(SHARED_DIR)/all-ram.lds
+#LINKER_SCRIPT := $(SHARED_DIR)/debug-link.lds
+
+HEADERS += $(SHARED_DIR)/hal/*.h
+HEADERS += $(SHARED_DIR)/drivers/*/*.h
+HEADERS += $(SHARED_DIR)/*.h
+
+C_SRCS += $(TARGET).c
+INCLUDES += -I.
+INCLUDES += -I$(SHARED_DIR)/drivers/CoreGPIO
+INCLUDES += -I$(SHARED_DIR)/drivers/CoreUARTapb
+INCLUDES += -I$(SHARED_DIR)/drivers/CoreTimer
+INCLUDES += -I$(SHARED_DIR)/drivers_sifive/
+INCLUDES += -I$(SHARED_DIR)
+INCLUDES += -I$(SHARED_DIR)/hal
+
+ASM_OBJS := $(patsubst %.S,%.o,$(ASM_SRCS))
+C_OBJS := $(patsubst %.c,%.o,$(C_SRCS))
+
+CC := riscv32-unknown-elf-gcc
+CFLAGS := -Og -g -march=RV32IM -fno-common -fno-jump-tables $(INCLUDES) $(C_DEFINES)
+LDFLAGS := -T $(LINKER_SCRIPT) -nostdlib -nostartfiles -lc -lgcc
+LDFLAGS += -L$(SHARED_DIR)
+LDFLAGS += -L$(SHARED_DIR)/drivers
+LDFLAGS += -L$(SHARED_DIR)/hal
+
+#RUN := spike --isa=RV32IM
+
+#run: $(TARGET)
+#	$(RUN) $<
+
+$(TARGET): $(ASM_OBJS) $(C_OBJS) $(LINKER_SCRIPT)
+	$(CC) $(CFLAGS) $(C_OBJS) -o $@ $(LDFLAGS)
+
+$(ASM_OBJS): %.o: %.S $(HEADERS)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+$(C_OBJS): %.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
+ELF_TO_IHEX = objcopy -O ihex --set-start 0
+
+$(TARGET).ihx: $(TARGET)
+	$(ELF_TO_IHEX) $(TARGET) $(TARGET).tmp
+	tail -n +2 $(TARGET).tmp > $(TARGET).ihx
+
+default: $(TARGET).ihx
+
+all: default
+
+clean:
+	rm -f $(TARGET) *.o *.ihx $(SHARED_DIR)/*.o $(SHARED_DIR)/drivers/*/*.o $(SHARED_DIR)/hal/*.o  $(SHARED_DIR)/drivers_sifive/*.o
+
+.PHONY: clean all default
